@@ -1,7 +1,8 @@
 //javascript so the calculator is able to function
 
 class Calculator {
-    constructor() {
+    //create a constructor 
+    constructor() { 
         this.firstNumber = '';
         this.secondNumber = '';
         this.operator = '';
@@ -28,12 +29,12 @@ class Calculator {
         this.operator = '';
         this.display.value = '0';
     }
-
+//calculations
     calculate() {
         const num1 = parseFloat(this.firstNumber);
         const num2 = parseFloat(this.secondNumber);
         let result = 0;
-
+        //switch function that allows calculator to go through the adding, subtracting, multiplying and dividing functions
         switch (this.operator) {
             case '+':
                 result = num1 + num2;
